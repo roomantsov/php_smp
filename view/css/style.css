@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Raleway&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+*{
+    font-family: 'PT Sans', sans-serif;
+    transition: all 0.2s linear;
+}
+
+body{
+    opacity: 0;
+}
+
+.nav , .navbar{
+    font-size: 16px;
+    background-color: white;
+}
+
+.navbar{
+    border: 3px solid black;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.navbar-right{
+    margin-right: 0;
+}
+
+.navbar-collapse li a{
+    font-weight: 700;
+    color: black!important;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-collapse li a:hover{
+    color: white!important;
+}
+
+.navbar-collapse li{
+    background-color: white;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.navbar-collapse li:hover{
+    background-color: #6dc6a9;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.navbar-brand{
+    color: black!important;
+}
+
+label{
+    margin-top: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+.error_box{
+    position: fixed;
+    opacity: 0.9;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 999;
+}
+
+
+@media screen and (max-width: 767px){
+	.masonry[data-columns]::before{
+		content: '1 .col-xs-12';
+	}
+    .navbar-collapse li:hover{
+        background-color: transparent;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+    
+    .navbar-collapse li a:hover{
+        color: black!important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.masonry[data-columns]::before{
+		content: '2 .col-xs-6';
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.masonry[data-columns]::before{
+		content: '3 .col-xs-4';
+	}
+    
+    .navbar-collapse li a:hover{
+        border-bottom-color: black!important;
+    }
+}
+@media screen and (min-width: 1200px){
+	.masonry[data-columns]::before{
+		content: '3 .col-xs-4';
+	}
+}
+
+
+
+.row{
+    margin-top: 20px;
+}
+
+.jumbotron{
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 767px){
+	.mass[data-columns]::before{
+		content: '1 .col-xs-12';
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.mass[data-columns]::before{
+		content: '2 .col-xs-6';
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.mass[data-columns]::before{
+		content: '3 .col-xs-4';
+	}
+}
+@media screen and (min-width: 1200px){
+	.mass[data-columns]::before{
+		content: '4 .col-xs-3';
+	}
+}
+
+.navbar-toggle{
+    background-color: black;
+    color: white;
+}
+
+.rights h1, .rights h4{
+    color: black;
+}
+
+/*NEW STYLE*/
+
+.btn{
+    border: 3px solid black;
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    padding: 7px 20px 7px 20px;
+}
+
+.thumbnail .btn{
+    text-align: center;
+    width: 49%;
+}
+
+.thumbnail{
+    border: 3px solid black;
+    border-radius: 0;
+    padding: 0;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(48,48,48,1);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(48,48,48,1);
+    box-shadow: 0px 2px 1px 0px rgba(48,48,48,1);
+    transition:0.4s all linear;
+}
+
+.thumbnail:hover{
+    border-radius: 0;
+    padding: 0;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0)
+}
+
+.thumbnail h3{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.thumbnail h3 a{
+    font-family: 'PT Sans';
+}
+
+.thumbnail h3:hover a{
+    text-decoration: none;
+}
+
+.nav-pills li a{
+    border: 3px solid black;
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+}
+
+.nav-pills li a span{
+    font-family: 'Montserrat';
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+input.form-control, textarea.form-control{
+    border: 3px solid black;
+    padding: 10px;
+    height: auto;
+}
